@@ -1,0 +1,93 @@
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.left{
+    width:100%;
+    background-color: deepskyblue;
+    padding: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border:1px black solid;
+}
+.right{
+    width:100%;
+    background-color: lightgreen;
+    padding: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px black solid;
+}
+
+.option_grid_left{
+    height: 600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: auto auto;
+    background-color: aliceblue;
+}
+
+.option_grid_right{
+    height: 600px;
+    overflow-y: scroll;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: aliceblue;
+}
+.o_box_left{
+    margin: 5px;
+    padding: 10px;
+    grid-column: auto;
+    width: 150px;
+    height: 265px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: brown;
+    border-radius:15px;
+}
+.o_box_right{
+    margin: 5px;
+    padding: 10px;
+    grid-column: auto;
+    width: 150px;
+    height: auto;
+    color: white;
+    text-align: center;
+    background-color: brown;
+    border-radius:15px;
+}
+
+.bid_amount{
+    width:140px;
+    height:20px;
+}
+
+#credits{
+    text-align: center;
+}
+
+#submit_button{
+    border: none;
+    background-color: #3ece44;
+    border-radius: 50px;
+    color: white;
+    height:40px;
+    width:300px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#submit_button:hover{
+    background-color: #4CAF50;
+}

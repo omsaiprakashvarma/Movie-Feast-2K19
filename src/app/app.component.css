@@ -1,0 +1,26 @@
+.center{
+    text-align: center;
+}
+
+#logo{
+    text-align: center;
+    
+}
+#menu{
+    background-color: lightskyblue;
+    height:30px;
+    padding: 5px;
+}
+button{
+    height:30px;
+    width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #2196F3;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background: #0b7dda;
+}

@@ -1,0 +1,47 @@
+<h1 id="credits">Credits:{{credits}}</h1>
+<div class="grid">
+        <div class="left">
+            <h2 class="center">Your selected options</h2>
+            <!-- <p *ngFor="let i of obj">{{i.pic}}</p> -->
+            <div class="option_grid_left">
+                    <div class="o_box_left" *ngFor="let i of op_list; let j=index">
+                        <a (click)="deselect_op(i.id,i.mid,j,i.bid)">
+                            <img src="https://image.tmdb.org/t/p/w500{{i.pic}}" height="225" width="150">
+                        </a>
+                        <p>{{i.bid}}</p>
+                    </div>
+                    
+                
+
+            </div>
+        </div>
+        <div class="right">
+            <h2 class="center">Select options</h2>
+            <!-- {{movie_id | json}}
+            {{pic_path | json}} -->
+            <!-- MY object json
+            {{obj | json}} -->
+            <div class="option_grid_right">
+
+                <div class="o_box_right" *ngFor="let i of data">
+                    <a (click)="select_op(i.id,i.poster_path)">
+                        <img src="https://image.tmdb.org/t/p/w500{{i.poster_path}}" height="225" width="150">
+                    </a>
+                    <p>{{i.title}}</p>
+                </div>
+
+            </div>
+        </div>
+</div>
+<br>
+<div class="center">
+    <button id="submit_button" class="center" (click)="save_op()">confirm your bet</button>
+</div>
+<br>
+<!-- <div ><pre>{{op_list | json}}</pre></div> -->
+<!-- opdata
+<pre>{{op_list | json}}</pre> -->
+<!-- <div *ngFor="let i of data">
+    {{i.poster_path}}
+    <img src="https://image.tmdb.org/t/p/w500{{i.poster_path}}" height="225" width="150">
+</div> -->

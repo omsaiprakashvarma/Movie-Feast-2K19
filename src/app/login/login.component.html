@@ -1,0 +1,23 @@
+<!-- <div class="Login">
+
+    <input type="text" [(ngModel)]="uid" placeholder="Username">
+    <input type="password" [(ngModel)]="pwd" placeholder="Password">
+
+</div> -->
+
+<!-- <form [formGroup]="loginForm" (ngSubmit)="validate_login()">
+
+    <input type="text" placeholder="username">
+
+</form> -->
+
+<label>
+        Name:
+        <input type="text" [formControl]="name">
+</label>
+
+<p>Value: {{ name.value }}</p>
+
+<p><button (click)="updateName()">Update Name</button></p>
+
+<p>Value: {{ name.value }}</p>
